@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_view_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view_item"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/imageViewChildProfilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/nameBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First"
+                android:layout_weight="1"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/lastnameBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last"
+                android:layout_weight="1"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view_item"
+            android:text="Email@Email.com"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view_item"
+            android:text="Date"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/button_explore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Explore"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/button_trips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Trips"/>
+
+        <Button
+            android:id="@+id/button_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Create"/>
+
+        <Button
+            android:id="@+id/button_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="Profile"/>
+
+    </LinearLayout>
+
+</LinearLayout>

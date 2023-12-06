@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.iu.kevschoo.project_11.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_propertyInfoFragment3"
+            app:destination="@id/propertyInfoFragment3" />
+        <action
+            android:id="@+id/action_homeFragment_to_tripsFragment"
+            app:destination="@id/tripsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createPropertyFragment"
+            app:destination="@id/createPropertyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/propertyInfoFragment3"
+        android:name="edu.iu.kevschoo.project_11.PropertyInfoFragment"
+        android:label="fragment_property_info"
+        tools:layout="@layout/fragment_property_info" >
+        <action
+            android:id="@+id/action_propertyInfoFragment3_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_propertyInfoFragment3_to_tripsFragment"
+            app:destination="@id/tripsFragment" />
+        <action
+            android:id="@+id/action_propertyInfoFragment3_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="edu.iu.kevschoo.project_11.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_tripsFragment"
+            app:destination="@id/tripsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_createPropertyFragment"
+            app:destination="@id/createPropertyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripsFragment"
+        android:name="edu.iu.kevschoo.project_11.TripsFragment"
+        android:label="TripsFragment" >
+        <action
+            android:id="@+id/action_tripsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_tripsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_tripsFragment_to_createPropertyFragment"
+            app:destination="@id/createPropertyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="edu.iu.kevschoo.project_11.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPropertyFragment"
+        android:name="edu.iu.kevschoo.project_11.CreatePropertyFragment"
+        android:label="CreatePropertyFragment" >
+        <action
+            android:id="@+id/action_createPropertyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_createPropertyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_createPropertyFragment_to_tripsFragment"
+            app:destination="@id/tripsFragment" />
+        <action
+            android:id="@+id/action_createPropertyFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/image_view_item"
+        android:layout_width="match_parent"
+        android:src="@drawable/house"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view_item"
+        android:text="Property Title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/text_view_house_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_title"
+        android:text="1 Home in Germany"
+        android:textSize="16sp"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:id="@+id/text_view_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_house_info"
+        android:text="4 stars"
+        android:textSize="16sp"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:id="@+id/text_view_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_rating"
+        android:text="Hosted by X"
+        android:textSize="16sp"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:id="@+id/text_view_long_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_host"
+        android:text="Bla Bla Info"
+        android:textSize="16sp"
+        android:paddingTop="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$XXX.XX"
+            android:textSize="16sp"
+            android:gravity="start"/>
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/button_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reserve"/>
+    </LinearLayout>
+
+</RelativeLayout>

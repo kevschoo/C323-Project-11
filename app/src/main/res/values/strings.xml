@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project_11</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rating_format">%1$.1f stars</string>
+    <string name="hosted_by_format">Hosted by %1$s</string>
+    <string name="price_format">$%1$.2f</string>
+</resources>
